@@ -1,7 +1,9 @@
 package com.fanavartech.android.schoolguidance.ui;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
@@ -28,6 +30,7 @@ public class TestActivity extends FillGap3BaseActivity<ObservableRecyclerView> i
 
     @Override
     protected ObservableRecyclerView createScrollable() {
+
         ObservableRecyclerView recyclerView = (ObservableRecyclerView) findViewById(R.id.scroll);
         newsAdapter = new NewsAdapter(newsList);
         recyclerView.setScrollViewCallbacks(this);
@@ -79,5 +82,7 @@ public class TestActivity extends FillGap3BaseActivity<ObservableRecyclerView> i
 
         newsAdapter.notifyDataSetChanged();
     }
+
+
 
 }

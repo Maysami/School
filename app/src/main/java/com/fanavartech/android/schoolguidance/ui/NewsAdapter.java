@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fanavartech.android.schoolguidance.R;
 
@@ -34,7 +35,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         if (viewType == TYPE_TOP) {
             View itemView = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_sections_main, parent, false);
-            TopViewHolder topViewHolder = new TopViewHolder(itemView,this);
+            TopViewHolder topViewHolder = new TopViewHolder(itemView, this);
             return topViewHolder;
         } else if (viewType == TYPE_HEADER) {
             View itemView = LayoutInflater.from(parent.getContext())
@@ -54,33 +55,31 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static class TopViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private RelativeLayout layoutOne, layoutTwo;
         private NewsAdapter mAdapter;
-        CircleImageView imgGrades;
+        private CircleImageView imageView;
 
         public TopViewHolder(View itemView, NewsAdapter adapter) {
             super(itemView);
             mAdapter = adapter;
-            itemView.setOnClickListener(this);
+            imageView = (CircleImageView) itemView.findViewById(R.id.img_grades);
             layoutOne = (RelativeLayout) itemView.findViewById(R.id.title_part);
             layoutTwo = (RelativeLayout) itemView.findViewById(R.id.title_part_two);
-
-            imgGrades= (CircleImageView) itemView.findViewById(R.id.img_grades);
+            imageView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
         }
-
-
         @Override
         public void onClick(View view) {
-            mAdapter.onItemHolderClick(this);
-            CircleImageView imgGrades;
-            imgGrades= (CircleImageView) view.findViewById(R.id.img_grades);
-            imgGrades.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Log.d("HI","SAAAAAAAAAAAA");
-                }
-            });
+            switch (view.getId()){
+                case R.id.img_grades :
 
+
+                    Intent intent = new Intent(itemView.getContext(),LessonsActivity.class);
+                    itemView.getContext().startActivity(intent);
+
+
+            }
         }
     }
+
     public void onItemHolderClick(RecyclerView.ViewHolder viewHolder) {
         // TODO Auto-generated method stub
         if (mOnItemClickListener != null) {
@@ -89,6 +88,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
     }
+
     public void setOnItemClickListener(
             AdapterView.OnItemClickListener onItemClickListener) {
         mOnItemClickListener = onItemClickListener;
@@ -119,7 +119,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         if (position == 1) {
             ((HeaderViewHolder) holder).txtHeader.setText(R.string.str_header_news);
         } else if (position >= 2) {
-            News news = newsList.get(position -2);
+            News news = newsList.get(position - 2);
             ((ItemViewHolder) holder).title.setText(news.getTitle());
         }
     }

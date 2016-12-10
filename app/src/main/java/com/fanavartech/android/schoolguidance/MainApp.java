@@ -2,6 +2,8 @@ package com.fanavartech.android.schoolguidance;
 
 
 import android.app.Application;
+import android.content.Context;
+
 /**
  * Main Application of the project
  *
@@ -9,5 +11,14 @@ import android.app.Application;
  * classes
  */
 public class MainApp extends Application {
+    private static Context mContext;
 
+
+    public static Context getmContext() {
+        return mContext;
+    }
+
+    public static void setmContext(Context mContext) {
+        MainApp.mContext = mContext;
+    }
 }
