@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/ripple_button">
+    <ImageView
+        android:id="@+id/img_header_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_email_white_24dp"
+        android:contentDescription="@string/str_header" />
+
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/title_header_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آخرین خبرها :"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:customFont="fonts/sans_light.ttf"
+        android:layout_toLeftOf="@+id/img_header_news"
+        android:layout_toStartOf="@+id/img_header_news"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

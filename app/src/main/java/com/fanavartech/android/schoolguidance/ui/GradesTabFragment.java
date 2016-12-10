@@ -1,0 +1,7 @@
+package com.fanavartech.android.schoolguidance.ui;
+
+import android.support.v4.app.Fragment;
+
+
+public class GradesTabFragment extends Fragment{
+}

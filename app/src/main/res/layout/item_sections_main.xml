@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_header"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_school"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_calendar"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_school"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/img_school"
+            android:layout_below="@+id/img_school"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_school"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_grades"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_calendar"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/img_grades"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_lessons"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf"
+            android:layout_alignLeft="@+id/img_grades"
+            android:layout_alignStart="@+id/img_grades" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_chart"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_calendar"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_chart"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf"
+            android:layout_below="@+id/img_chart"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_part_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_part"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_report"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_suitcase"
+            android:layout_alignParentLeft="true"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img_report"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_report"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf"
+            android:layout_alignRight="@+id/img_report"
+            android:layout_alignEnd="@+id/img_report"
+            android:id="@+id/view" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_homework"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_suitcase"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/img_homework"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_homework"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf"
+            android:layout_alignLeft="@+id/img_homework"
+            android:layout_alignStart="@+id/img_homework" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_exam"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/ic_suitcase"
+            app:civ_border_color="#8CAEF1"
+            app:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/str_header_exam"
+            android:textColor="@android:color/black"
+            app:customFont="fonts/sans_light.ttf"
+            android:layout_below="@+id/img_exam"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

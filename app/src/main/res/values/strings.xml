@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">School</string>
+    <string name="school_name">مجتمع فرهنگی آموزشی علامه طباطبائی</string>
+    <string name="str_header">دبیرستان فرزانگان تهران</string>
+    <string name="str_header_news">آخرین خبرها:</string>
+
+    <string name="str_header_school">مدرسه</string>
+    <string name="str_header_chart">نمودار</string>
+    <string name="str_header_lessons">دروس</string>
+    <string name="str_header_report">گزارش</string>
+    <string name="str_header_exam">امتحان</string>
+    <string name="str_header_homework">تکالیف</string>
+
+    <string name="str_name_class">دانش آموز پایه ششم ابتدایی</string>
+
+    <string name="str_show_complete_username">نام کاربری را وارد کنید!</string>
+    <string name="str_show_complete_password">رمز عبور خود را به طور صحیح وارد کنید!</string>
+
+</resources>
