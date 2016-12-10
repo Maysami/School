@@ -35,17 +35,6 @@ public class TestActivity extends FillGap3BaseActivity<ObservableRecyclerView> i
         recyclerView.setHasFixedSize(true);
         setDummyDataFew(recyclerView);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
-        recyclerView.addOnItemTouchListener(
-                new RecyclerItemClickListener(context, recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override public void onItemClick(View view, int position) {
-                        // do whatever
-                    }
-
-                    @Override public void onLongItemClick(View view, int position) {
-                        // do whatever
-                    }
-                })
-        );
         recyclerView.setAdapter(newsAdapter);
 
 
