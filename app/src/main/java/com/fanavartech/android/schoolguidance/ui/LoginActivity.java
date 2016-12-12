@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();}
 

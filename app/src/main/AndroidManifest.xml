@@ -24,6 +24,7 @@
             android:name=".ui.TestActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".ui.LessonsActivity" />
+        <activity android:name=".ui.InterfaceActivity"/>
 
         <meta-data
             android:name="io.fabric.ApiKey"

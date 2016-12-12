@@ -21,7 +21,7 @@ import java.util.List;
 public class LessonsActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewLessons;
-    private GradesTabAdapter tabAdapter;
+    private LessonsAdapter tabAdapter;
     private List<Lessons> lessonses = new ArrayList<>();
     private Toolbar mToolbar;
     private TextView tvToolbarLessons;
@@ -29,13 +29,13 @@ public class LessonsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.grades_tab_fragment);
+        setContentView(R.layout.activity_lessons);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         tvToolbarLessons = (TextView) findViewById(R.id.tv_toolbar_lessons);
         Typeface type = Typeface.createFromAsset(getAssets(),"fonts/sans_light.ttf");
         tvToolbarLessons.setTypeface(type);
         recyclerViewLessons = (RecyclerView) findViewById(R.id.recycler_view_lessons);
-        tabAdapter = new GradesTabAdapter(lessonses);
+        tabAdapter = new LessonsAdapter(lessonses);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewLessons.setLayoutManager(layoutManager);
         recyclerViewLessons.setItemAnimator(new DefaultItemAnimator());

@@ -1,43 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="8dp"
-    android:layout_margin="8dp"
-    android:background="@drawable/list_back_rounded">
-    <ImageView
-        android:id="@+id/img_header_news"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="32dp"
-        android:src="@android:drawable/radiobutton_off_background"
-        android:contentDescription="@string/str_header" />
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
 
     <com.fanavartech.android.schoolguidance.ui.TextViewPlus
-        android:id="@+id/title_header_news"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_title_date"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:text="ریاضی "
-        android:textColor="@android:color/white"
+        android:background="#FFFFFF"
+        android:text="تاریخ:"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:gravity="center"
         android:textSize="16sp"
-        android:textStyle="bold"
-        app:customFont="fonts/sans_light.ttf"
-        android:layout_toLeftOf="@+id/img_header_news"
-        android:layout_toStartOf="@+id/img_header_news"
-        android:layout_marginRight="8dp"
-        android:layout_centerInParent="true"/>
+        android:padding="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="8dp"
+        app:customFont="fonts/sans_light.ttf"/>
 
-    <ImageView
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/ic_bookmark_border_white_24dp"
-        android:layout_marginLeft="4dp"
-        android:layout_centerInParent="true"/>
+        android:background="#FFFFFF"
+        android:text="14 دی ماه 1395"
+        android:layout_toLeftOf="@+id/tv_title_date"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        app:customFont="fonts/Byekan.ttf"/>
+
+
+
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/tv_value_grade"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="#673AB7"
+        android:text="18.5"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="42dp"
+        app:customFont="fonts/Byekan.ttf"/>
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_value_grade"
+        android:background="#FFFFFF"
+        android:text="امتحان کتبی"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="42dp"
+        app:customFont="fonts/sans_light.ttf"/>
+
+
+
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/tv_value_question"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="#673AB7"
+        android:text="عالی"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="42dp"
+        app:customFont="fonts/sans_light.ttf"/>
+    <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_value_question"
+        android:background="#FFFFFF"
+        android:text="پرسش کلاسی"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="42dp"
+        app:customFont="fonts/sans_light.ttf"/>
+
+
+
 
 </RelativeLayout>

@@ -17,19 +17,19 @@ public class PagerAdapter extends FragmentStatePagerAdapter{
     public Fragment getItem(int position) {
 
         switch (position){
-            case 0:
+            case 4:
                 GradesTabFragment gradesTabFragment = new GradesTabFragment();
-                return null;
-            case 1:
+                return gradesTabFragment;
+            case 3:
                 HomeWorksTabFragment homeWorksTabFragment = new HomeWorksTabFragment();
                 return homeWorksTabFragment;
             case 2:
                 ChartTabFragment chartTabFragment = new ChartTabFragment();
                 return chartTabFragment;
-            case 3:
+            case 1:
                 ExamTabFragment examTabFragment=new ExamTabFragment();
                 return examTabFragment;
-            case 4:
+            case 0:
                 ReportTabFragment reportTabFragment = new ReportTabFragment();
                 return reportTabFragment;
             default:

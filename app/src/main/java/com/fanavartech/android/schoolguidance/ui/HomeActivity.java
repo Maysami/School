@@ -1,14 +1,8 @@
 package com.fanavartech.android.schoolguidance.ui;
 
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 
 import com.fanavartech.android.schoolguidance.R;
 import com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView;
@@ -17,15 +11,13 @@ import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCal
 import java.util.ArrayList;
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
-public class TestActivity extends FillGap3BaseActivity<ObservableRecyclerView> implements ObservableScrollViewCallbacks {
+public class HomeActivity extends FillGap3BaseActivity<ObservableRecyclerView> implements ObservableScrollViewCallbacks {
     private List<News> newsList = new ArrayList<>();
     private NewsAdapter newsAdapter;
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.toolbar_main;
+        return R.layout.activity_home;
     }
 
     @Override
@@ -77,7 +69,7 @@ public class TestActivity extends FillGap3BaseActivity<ObservableRecyclerView> i
         news = new News("دانش آموزانی که لیاقت حضور در اربعین حسینی(ع) را داشته اید،زیارت شما قبول درگاه احدیت. مدیر مدرسه");
         newsList.add(news);
 
-        news = new News("دانش آموزانی که لیاقت حضور در اربعین حسینی(ع) را داشته اید،زیارت شما قبول درگاه احدیت. مدیر مدرسه");
+        news = new News("دانش آموزانی که لیاقت حضور در اربعین حسینی(ع) را داشته اید،زیارت شما قبول درگاه احدیت. شرکت فرهیختگان علم و صنعت");
         newsList.add(news);
 
         newsAdapter.notifyDataSetChanged();

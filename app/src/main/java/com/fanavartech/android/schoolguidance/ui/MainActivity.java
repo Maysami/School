@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         CircleImageView imgStudent = (de.hdodenhof.circleimageview.CircleImageView)findViewById(R.id.img_student);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         newsAdapter = new NewsAdapter(newsList);
-        RecyclerView.LayoutManager mlayoutManager  = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager mlayoutManager  = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mlayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));

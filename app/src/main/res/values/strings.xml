@@ -16,4 +16,7 @@
     <string name="str_show_complete_username">نام کاربری را وارد کنید!</string>
     <string name="str_show_complete_password">رمز عبور خود را به طور صحیح وارد کنید!</string>
 
+    <string name="str_header_grade">نمرات</string>
+
+
 </resources>

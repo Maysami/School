@@ -3,14 +3,12 @@ package com.fanavartech.android.schoolguidance.ui;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.fanavartech.android.schoolguidance.R;
 
@@ -52,7 +50,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     }
 
-    public static class TopViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public static class TopViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private RelativeLayout layoutOne, layoutTwo;
         private NewsAdapter mAdapter;
         private CircleImageView imageView;
@@ -66,15 +64,20 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             imageView.setOnClickListener(this);
             itemView.setOnClickListener(this);
         }
+
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
-                case R.id.img_grades :
-
-
-                    Intent intent = new Intent(itemView.getContext(),LessonsActivity.class);
+            switch (view.getId()) {
+                case R.id.img_grades:
+                    Intent intent = new Intent(itemView.getContext(), LessonsActivity.class);
                     itemView.getContext().startActivity(intent);
-
+                    break;
+                case R.id.img_chart :
+                    break;
+                case R.id.img_school :
+                    break;
+                case R.id.img_homework :
+                    break;
 
             }
         }
@@ -100,7 +103,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         public HeaderViewHolder(View itemView) {
             super(itemView);
-            txtHeader = (TextView) itemView.findViewById(R.id.title_header_news);
+            txtHeader = (TextView) itemView.findViewById(R.id.tv_header_news);
         }
     }
 

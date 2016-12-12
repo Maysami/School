@@ -25,11 +25,11 @@ public class InterfaceActivity extends AppCompatActivity {
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("نمرات"));
-        tabLayout.addTab(tabLayout.newTab().setText("تکالیف"));
-        tabLayout.addTab(tabLayout.newTab().setText("نمودار"));
-        tabLayout.addTab(tabLayout.newTab().setText("امتحان"));
-        tabLayout.addTab(tabLayout.newTab().setText("گزارش"));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.str_header_report));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.str_header_exam));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.str_header_chart));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.str_header_homework));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.str_header_grade));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/sans_light.ttf");
@@ -51,6 +51,7 @@ public class InterfaceActivity extends AppCompatActivity {
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        viewPager.setCurrentItem(4);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
