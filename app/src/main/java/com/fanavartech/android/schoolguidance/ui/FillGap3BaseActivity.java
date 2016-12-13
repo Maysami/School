@@ -95,6 +95,8 @@ public abstract class FillGap3BaseActivity<S extends Scrollable> extends BaseAct
 
         mScrollable = createScrollable();
 
+        //TODO
+        // clickable icon when scrolling doesn't working !!!
         mInterceptionLayout = (TouchInterceptionFrameLayout) findViewById(R.id.scroll_wrapper);
         mInterceptionLayout.setScrollInterceptionListener(mInterceptionListener);
         mTitle = (TextView) findViewById(R.id.title);
