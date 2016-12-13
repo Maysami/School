@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    android:orientation="vertical">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded"
+    android:layout_margin="4dp"
+    android:padding="4dp">
 
 
     <com.fanavartech.android.schoolguidance.ui.TextViewPlus
         android:id="@+id/tv_title_date"
-        android:layout_width="110dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="42dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="2dp"
-        android:background="#FFFFFF"
         android:gravity="center"
         android:padding="4dp"
-        android:text="تاریخ:"
+        android:text="تاریخ : "
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:customFont="fonts/sans_light.ttf" />
 
     <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/tv_value_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:layout_toLeftOf="@+id/tv_title_date"
-        android:background="#FFFFFF"
         android:gravity="center"
         android:padding="4dp"
-        android:text="14 دی ماه 1395"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:customFont="fonts/Byekan.ttf" />
@@ -46,16 +45,16 @@
         android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="42dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="42dp"
         android:background="#673AB7"
         android:gravity="center"
         android:padding="4dp"
-        android:text="18.5"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:customFont="fonts/Byekan.ttf" />
 
     <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/tv_title_grade"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -65,7 +64,6 @@
         android:background="#FFFFFF"
         android:gravity="center"
         android:padding="4dp"
-        android:text="امتحان کتبی"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:customFont="fonts/sans_light.ttf" />
@@ -76,16 +74,16 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginLeft="42dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="42dp"
         android:background="#673AB7"
         android:gravity="center"
         android:padding="4dp"
-        android:text="عالی"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:customFont="fonts/sans_light.ttf" />
 
     <com.fanavartech.android.schoolguidance.ui.TextViewPlus
+        android:id="@+id/tv_title_question"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_value_question"

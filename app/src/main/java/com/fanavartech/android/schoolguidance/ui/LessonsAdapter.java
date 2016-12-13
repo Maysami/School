@@ -37,7 +37,7 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.MyViewHo
     public LessonsAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_list_grades, parent, false);
+                .inflate(R.layout.item_list_lessons, parent, false);
         return new MyViewHolder(itemView);
     }
 
